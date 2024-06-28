@@ -58,6 +58,20 @@
         #hide {
             opacity: 0;
         }
+        .card-fish {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            padding: 1em;
+            margin: 1em;
+        }
+        .card-fish strong {
+            color: blue;
+        }
+        .card-fish strong:hover {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -74,6 +88,17 @@
         </nav>
     </header>
     <p class="disappear-btn">Disappear</p>
-<script src="introduction.js"></script>
+    <section class="card-fish">
+        <h1>Red Rim</h1>
+        <img src="img/redrim.jpeg" alt="Redrim Fish">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur..</p>
+        <strong>read more</strong>
+        <button type="submit">Buy</button>
+    </section>
+    <button onclick="window.print()">Print</button>
+    
+
+
+<script src="output.js"></script>
 </body>
 </html>
