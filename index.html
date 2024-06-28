@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {     
+            min-height: 300px;
+        }
+        #navbar-dark {
+            background-color: #333;
+            color: #eee;
+        }
+        #navbar-dark a {
+            color: #eee;
+            text-decoration: none;
+        }
+        #navbar-light {
+            background-color: #eee;
+            color: #333;
+        }
+        #navbar-light a {
+            color: #333;
+            text-decoration: none;
+        }
+        header {
+            transition: 0.5s ease-out;
+        }
+        header nav{
+            display: flex;
+            padding: 1em;
+            justify-content: space-between;
+        }
+        header nav ul {
+            display: flex;
+        }
+        header nav ul li {
+            list-style: none;
+        }
+        
+        header nav ul li a {
+            padding: 1em;
+        }
+        .disappear-btn {
+            font-size: 1.5em;
+            background-color: lightseagreen;
+            padding: 1em;
+            display: inline-block;
+            margin: 1em;
+            color: #eee;
+            border-radius: 10px;
+        }
+        #hide {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar-dark">
+            <h1 class="navbar-title">ZBettaFarm</h1>
+            <ul>
+                <li class="nav-menu"><a href="#">Menu 1</a></li>
+                <li class="nav-menu"><a href="#">Menu 2</a></li>
+                <li class="nav-menu"><a href="#">Menu 3</a></li>
+                <li class="nav-menu"><a href="#">Menu 4</a></li>
+                <li class="nav-menu"><a href="#" id="button">Menu 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p class="disappear-btn">Disappear</p>
+<script src="introduction.js"></script>
+</body>
+</html>
